@@ -25,8 +25,6 @@ const LoginModal = () => {
 
     try{
       setIsLoading(true);
-       // TODO ADD AND LOGIN
-
       await signIn('credentials',{
         email,
         password
