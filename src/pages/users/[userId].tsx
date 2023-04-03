@@ -4,6 +4,7 @@ import { ClipLoader } from "react-spinners";
 import useUser from "@/hooks/useUser";
 import UserHero from "@/components/users/userHero";
 import UserBio from "@/components/users/userBio";
+import PostFeed from "@/components/posts/PostFeed";
 
 
 const UserView = () => {
@@ -30,6 +31,7 @@ const UserView = () => {
     <Header showBackArrow label={fetchedUser?.name}/>
     <UserHero userId={userId as string}/>
     <UserBio userId ={userId as string}/> 
+    <PostFeed userId={userId as string}/>
     </>
   )
 }
