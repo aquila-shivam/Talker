@@ -55,7 +55,7 @@ const onClick = useCallback(()=>{
             text-white
             text-[20px]
             '>
-                Tweet
+                Talk
             </p>
         </div>
     </div>
