@@ -40,7 +40,7 @@ const Form:React.FC<FormProps> = ({
 
             await axios.post(url,{body});
             
-            toast.success('Tweet Created')
+            toast.success('Talk Created')
 
             setBody('');
             mutatePosts();
@@ -97,7 +97,7 @@ const Form:React.FC<FormProps> = ({
                         <Button
                         disabled={isLoading || !body}
                         onClick={onSubmit}
-                        label='Tweet'
+                        label='Talk'
                         large
                         />
                     </div>
@@ -113,7 +113,7 @@ const Form:React.FC<FormProps> = ({
         mb-4
         font-bold
         "
-        >Welcome to Twitter
+        >Welcome to Talker
         </h1>
         <div className="flex flex-row items-center justify-center gap-4 ">
             <Button label ='Login' onClick={loginModal.onOpen} large/>

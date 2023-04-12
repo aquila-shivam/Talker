@@ -39,7 +39,7 @@ export default async function handler(req:NextApiRequest,res:NextApiResponse) {
             if(post?.userId){
                 await prisma.notification.create({
                     data:{
-                        body: `${currentUser.username} replied to your tweet`,
+                        body: `${currentUser.username} replied to your Thought`,
                         userId : post.userId
                     }
                     
